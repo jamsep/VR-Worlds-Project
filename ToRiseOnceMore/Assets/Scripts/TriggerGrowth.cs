@@ -42,7 +42,6 @@ public class TriggerGrowth : MonoBehaviour
         Debug.Log(Randomize());
         Instantiate(branch, spawnPos, Randomize());
         growAnimation = branch.GetComponent<GrowBranch>();
-        growAnimation.growthTriggered = true;
     }
 
     Quaternion Randomize()
