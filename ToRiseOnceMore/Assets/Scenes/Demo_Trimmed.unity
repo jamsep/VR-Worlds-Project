@@ -2693,9 +2693,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1187134324503023899, guid: 414a15455a3d72145b2ca1916d13c660, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1187134324503023899, guid: 414a15455a3d72145b2ca1916d13c660, type: 3}
+      propertyPath: fadeOnStart
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1187134324503024353, guid: 414a15455a3d72145b2ca1916d13c660, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 414a15455a3d72145b2ca1916d13c660, type: 3}
@@ -3229,6 +3237,10 @@ PrefabInstance:
     - target: {fileID: 5576116300561637584, guid: 447ea504d51c7e3498f54a1085da1a65, type: 3}
       propertyPath: m_Name
       value: FadeInOutCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5576116300561637584, guid: 447ea504d51c7e3498f54a1085da1a65, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 447ea504d51c7e3498f54a1085da1a65, type: 3}
@@ -4061,6 +4073,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!136 &306787438
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306787436}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.62087643
+  m_Height: 3.2650647
+  m_Direction: 0
+  m_Center: {x: -0.05175337, y: -0.101324685, z: 0.0011053458}
 --- !u!1 &315318879
 GameObject:
   m_ObjectHideFlags: 0
@@ -6224,6 +6250,17 @@ Transform:
   m_Father: {fileID: 1350216607}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &523190981 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1187134324503023896, guid: 414a15455a3d72145b2ca1916d13c660, type: 3}
+  m_PrefabInstance: {fileID: 192526507}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc23828fa002a5744bd9e028433a026c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &531707178
 GameObject:
   m_ObjectHideFlags: 0
@@ -6338,11 +6375,6 @@ Transform:
   m_Father: {fileID: 633797416}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &537969528 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5576116300639643938, guid: 447ea504d51c7e3498f54a1085da1a65, type: 3}
-  m_PrefabInstance: {fileID: 246271135}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &538843154
 GameObject:
   m_ObjectHideFlags: 0
@@ -8096,10 +8128,10 @@ MonoBehaviour:
   Response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 537969528}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 523190981}
+        m_TargetAssemblyTypeName: FadeScreen, Assembly-CSharp
+        m_MethodName: FadeOut
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -17227,7 +17259,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5d8a6dd8f70630243aff084ca5c86b80, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.6
+  m_Volume: 0.93
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -17789,7 +17821,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5d8a6dd8f70630243aff084ca5c86b80, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.6
+  m_Volume: 0.9
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -21474,6 +21506,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!136 &1654680162
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654680160}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.51022077
+  m_Height: 3.6395001
+  m_Direction: 0
+  m_Center: {x: -0.077616386, y: -0.102602005, z: 0.05790156}
 --- !u!1 &1660051123
 GameObject:
   m_ObjectHideFlags: 0
@@ -22266,7 +22312,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5d8a6dd8f70630243aff084ca5c86b80, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.6
+  m_Volume: 0.926
   m_Pitch: 1
   Loop: 0
   Mute: 0
